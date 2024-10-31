@@ -49,7 +49,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='w-[650px] h-[75px] bg-light-cardBackground dark:bg-dark-cardBackground rounded-[10px] flex items-center justify-evenly pl-[10px] pr-[10px] absolute left-[50%] top-[20px] translate-x-[-50%] z-[2]'>
+            <div className='w-[650px] h-[75px] bg-light-cardBackground dark:bg-dark-cardBackground rounded-[10px] flex items-center justify-evenly pl-[10px] pr-[10px] fixed left-[50%] top-[20px] translate-x-[-50%] z-[2]'>
                 {/* <svg className='w-[40px] h-[40px] invert' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 23 22.5" version="1.1" x="0px" y="0px">
                     <title>noise</title>
                     <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
