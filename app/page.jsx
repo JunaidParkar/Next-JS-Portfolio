@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react'
 import Navbar from '@/components/navbar'
 import CustomCursor from "codereducer/cursor";
+import Lenis from 'lenis';
 
 const page = () => {
 
@@ -18,6 +19,22 @@ const page = () => {
   useEffect(() => {
     let c = new CustomCursor(cursor.current)
     c.getCursor()
+    // Initialize Lenis
+    const lenis = new Lenis();
+
+    // Listen for the scroll event and log the event data
+    lenis.on('scroll', (e) => {
+      console.log(e);
+    });
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
     // c.makeMagnet(myRef.current)
     return () => {
       c.revert()
@@ -122,6 +139,46 @@ const page = () => {
       </div>
 
       {/* my services ends */}
+
+      {/* my works starts */}
+
+      <div className="w-full flex justify-center text-light-primaryText dark:text-dark-primaryText">
+        <div className='w-[750px] bg-red-500'>
+          <h4 className='font-inter-regular text-3xl w-full text-center mb-[50px]'>My works</h4>
+          <div className='w-full bg-light-cardBackground dark:bg-dark-cardBackground p-[15px] rounded-[10px] mb-[10px]'>
+            <img src="/assets/images/artex.png" alt="" className='w-full object-cover rounded-[10px] hover:brightness-75' />
+            <div className='mt-[20px]'>
+              <h6 className='font-inter-regular text-2xl'>Concrete</h6>
+              <p className='text-lg font-inter-italic text-light-secondaryText dark:text-dark-secondaryText'>Web Design</p>
+            </div>
+          </div>
+          <div className='grid grid-cols-2 gap-[10px] w-full'>
+            <div className='rounded-[10px] bg-light-cardBackground dark:bg-dark-cardBackground p-[10px] w-full h-full'>
+              <img src="/assets/images/artex.png" alt="" className='w-full object-cover rounded-[10px] hover:brightness-75' />
+              <div className='mt-[20px]'>
+                <h6 className='font-inter-regular text-2xl'>Concrete</h6>
+                <p className='text-lg font-inter-italic text-light-secondaryText dark:text-dark-secondaryText'>Web Design</p>
+              </div>
+            </div>
+            <div className='rounded-[10px] bg-light-cardBackground dark:bg-dark-cardBackground p-[10px] w-full h-full'>
+              <img src="/assets/images/artex.png" alt="" className='w-full object-cover rounded-[10px] hover:brightness-75' />
+              <div className='mt-[20px]'>
+                <h6 className='font-inter-regular text-2xl'>Concrete</h6>
+                <p className='text-lg font-inter-italic text-light-secondaryText dark:text-dark-secondaryText'>Web Design</p>
+              </div>
+            </div>
+            <div className='rounded-[10px] bg-light-cardBackground dark:bg-dark-cardBackground p-[10px] w-full h-full'>
+              <img src="/assets/images/artex.png" alt="" className='w-full object-cover rounded-[10px] hover:brightness-75' />
+              <div className='mt-[20px]'>
+                <h6 className='font-inter-regular text-2xl'>Concrete</h6>
+                <p className='text-lg font-inter-italic text-light-secondaryText dark:text-dark-secondaryText'>Web Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* my works ends */}
 
     </>
   )

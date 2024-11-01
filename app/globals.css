@@ -71,6 +71,21 @@
     font-family: Arial, Helvetica, sans-serif;
 } */
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #5A5A5A;
+    border-radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body::-webkit-scrollbar-thumb {
+        background: #BBBBBB;
+    }
+}
+
 .img_scroller::-webkit-scrollbar {
     display: none;
 }
