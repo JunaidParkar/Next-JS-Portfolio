@@ -142,7 +142,7 @@ const page = () => {
 
       {/* my works starts */}
 
-      <div className="w-full flex justify-center text-light-primaryText dark:text-dark-primaryText">
+      <div className="mb-[250px] w-full flex justify-center text-light-primaryText dark:text-dark-primaryText">
         <div className='w-[750px] bg-red-500'>
           <h4 className='font-inter-regular text-3xl w-full text-center mb-[50px]'>My works</h4>
           <div className='w-full bg-light-cardBackground dark:bg-dark-cardBackground p-[15px] rounded-[10px] mb-[10px]'>
@@ -179,6 +179,21 @@ const page = () => {
       </div>
 
       {/* my works ends */}
+
+      {/* little more about me starts */}
+
+      <div className='w-full flex justify-center text-light-primaryText dark:text-dark-primaryText'>
+        <div className='w-[750px] flex flex-col gap-[50px]'>
+          <h4 className='font-inter-regular text-3xl w-full text-center'>A little more about me</h4>
+          <div className='w-full'>
+            <p>When I’m not diving deep into lines of code, you’ll find me exploring new programming languages, solving challenging algorithms, or building unique projects that push my skills to new levels. Coding is my true passion, and I’m constantly inspired by the endless possibilities it offers.</p>
+            <p>I love experimenting with different frameworks and libraries, always aiming to optimize and refine my approach. Staying up-to-date with industry trends, I am dedicated to learning and applying the latest technologies, making my work efficient, effective, and cutting-edge.</p>
+            <p>Beyond my dedication to coding, I thrive in environments that encourage innovation and problem-solving. My curiosity drives me to explore complex problems and creative solutions, always seeking ways to make meaningful contributions to the projects I’m involved in.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* little more about me ends */}
 
     </>
   )
