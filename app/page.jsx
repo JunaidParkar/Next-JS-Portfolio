@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Page = () => {
 
-  const [contactData, setContactData] = useState({name: "", email: "", message: ""})
+  const [contactData, setContactData] = useState({ name: "", email: "", message: "" })
 
   const explore = useRef([])
   const magnetRef = useRef();
@@ -40,27 +40,15 @@ const Page = () => {
 
   const submitContact = e => {
     e.preventDefault()
-    const userID = 'service_obgz89d'; // Replace with your user ID
-    const templateID = 'template_ocnaidp'; // Replace with your template ID
-
     const templateParams = {
       from_name: contactData.name,
       from_email: contactData.email,
       message: contactData.message,
     };
-
     let msg = `Hey there,\n I'm ${templateParams.from_name}, My email id is ${templateParams.from_email}.\n ${templateParams.message}`
-
     window.open(`https://wa.me/+918828954676?text=${encodeURIComponent(msg)}`, "_blank")
   }
 
-
-  useEffect(() => {
-    console.log(contactData)
-  
-    
-  }, [contactData])
-  
 
   return (
     <>
@@ -123,7 +111,7 @@ const Page = () => {
                   <img src="/assets/icons/plus.png" alt="" className='cursor-pointer dark:invert w-[25px] h-[25px]' onClick={() => serviceClick(0)} />
                   <img src="/assets/icons/minus.png" alt="" className='cursor-pointer dark:invert w-[25px] h-[25px] transition' style={{ display: "none" }} onClick={() => serviceClick(0)} />
                 </div>
-                <p className='text-light-secondaryText dark:text-dark-secondaryText' style={{display: "none"}}>Skilled in creating high-quality, responsive static websites using modern web development frameworks like Next.js. With a focus on clean code and optimized performance, I deliver engaging and efficient web solutions that meet client needs without requiring a database backend.</p>
+                <p className='text-light-secondaryText dark:text-dark-secondaryText' style={{ display: "none" }}>Skilled in creating high-quality, responsive static websites using modern web development frameworks like Next.js. With a focus on clean code and optimized performance, I deliver engaging and efficient web solutions that meet client needs without requiring a database backend.</p>
               </li>
               <li className='w-full py-[15px] px-[20px] flex gap-[15px] flex-col bg-light-cardBackground dark:bg-dark-cardBackground rounded-[10px]' ref={(e) => servicesRef.current.push(e)}>
                 <div className='flex items-center justify-between'>
@@ -131,7 +119,7 @@ const Page = () => {
                   <img src="/assets/icons/plus.png" alt="" className='cursor-pointer dark:invert w-[25px] h-[25px]' onClick={() => serviceClick(1)} />
                   <img src="/assets/icons/minus.png" alt="" className='cursor-pointer dark:invert w-[25px] h-[25px] transition' style={{ display: "none" }} onClick={() => serviceClick(1)} />
                 </div>
-                <p className='text-light-secondaryText dark:text-dark-secondaryText' style={{display: "none"}}>Experienced in building robust and scalable backend servers that support seamless functionality and efficient data handling. Skilled in server-side technologies and RESTful API design, I create secure and high-performance backend solutions tailored to meet project requirements.</p>
+                <p className='text-light-secondaryText dark:text-dark-secondaryText' style={{ display: "none" }}>Experienced in building robust and scalable backend servers that support seamless functionality and efficient data handling. Skilled in server-side technologies and RESTful API design, I create secure and high-performance backend solutions tailored to meet project requirements.</p>
               </li>
               <li className='w-full py-[15px] px-[20px] flex gap-[15px] flex-col bg-light-cardBackground dark:bg-dark-cardBackground rounded-[10px]' ref={(e) => servicesRef.current.push(e)}>
                 <div className='flex items-center justify-between'>
@@ -139,7 +127,7 @@ const Page = () => {
                   <img src="/assets/icons/plus.png" alt="" className='cursor-pointer dark:invert w-[25px] h-[25px]' onClick={() => serviceClick(2)} />
                   <img src="/assets/icons/minus.png" alt="" className='cursor-pointer dark:invert w-[25px] h-[25px] transition' style={{ display: "none" }} onClick={() => serviceClick(2)} />
                 </div>
-                <p className='text-light-secondaryText dark:text-dark-secondaryText' style={{display: "none"}}>Proficient in designing and managing databases to ensure data integrity, security, and optimal performance. With expertise in database schema design, queries, and optimization, I build reliable database solutions that effectively support application needs and enhance data-driven functionalities.</p>
+                <p className='text-light-secondaryText dark:text-dark-secondaryText' style={{ display: "none" }}>Proficient in designing and managing databases to ensure data integrity, security, and optimal performance. With expertise in database schema design, queries, and optimization, I build reliable database solutions that effectively support application needs and enhance data-driven functionalities.</p>
               </li>
               <li className='w-full py-[15px] px-[20px] flex gap-[15px] flex-col bg-light-cardBackground dark:bg-dark-cardBackground rounded-[10px]' ref={(e) => servicesRef.current.push(e)}>
                 <div className='flex items-center justify-between'>
@@ -147,7 +135,7 @@ const Page = () => {
                   <img src="/assets/icons/plus.png" alt="" className='cursor-pointer dark:invert w-[25px] h-[25px]' onClick={() => serviceClick(3)} />
                   <img src="/assets/icons/minus.png" alt="" className='cursor-pointer dark:invert w-[25px] h-[25px] transition' style={{ display: "none" }} onClick={() => serviceClick(3)} />
                 </div>
-                <p className='text-light-secondaryText dark:text-dark-secondaryText' style={{display: "none"}}>Skilled in Android development, creating intuitive and efficient mobile applications with a focus on user experience and performance. Proficient in Android SDK, Kotlin, and Java, I develop apps that are both visually appealing and functionally robust, tailored to meet diverse user needs.</p>
+                <p className='text-light-secondaryText dark:text-dark-secondaryText' style={{ display: "none" }}>Skilled in Android development, creating intuitive and efficient mobile applications with a focus on user experience and performance. Proficient in Android SDK, Kotlin, and Java, I develop apps that are both visually appealing and functionally robust, tailored to meet diverse user needs.</p>
               </li>
               <li className='w-full py-[15px] px-[20px] flex gap-[15px] flex-col bg-light-cardBackground dark:bg-dark-cardBackground rounded-[10px]' ref={(e) => servicesRef.current.push(e)}>
                 <div className='flex items-center justify-between'>
@@ -155,7 +143,7 @@ const Page = () => {
                   <img src="/assets/icons/plus.png" alt="" className='cursor-pointer dark:invert w-[25px] h-[25px]' onClick={() => serviceClick(4)} />
                   <img src="/assets/icons/minus.png" alt="" className='cursor-pointer dark:invert w-[25px] h-[25px] transition' style={{ display: "none" }} onClick={() => serviceClick(4)} />
                 </div>
-                <p className='text-light-secondaryText dark:text-dark-secondaryText' style={{display: "none"}}>Experienced in app development, crafting high-quality applications focused on functionality, performance, and user engagement. Proficient in full-cycle development for both mobile and web apps, I build solutions that are responsive, scalable, and tailored to meet specific client and user requirements.</p>
+                <p className='text-light-secondaryText dark:text-dark-secondaryText' style={{ display: "none" }}>Experienced in app development, crafting high-quality applications focused on functionality, performance, and user engagement. Proficient in full-cycle development for both mobile and web apps, I build solutions that are responsive, scalable, and tailored to meet specific client and user requirements.</p>
               </li>
               <li className='w-full py-[15px] px-[20px] flex gap-[15px] flex-col bg-light-cardBackground dark:bg-dark-cardBackground rounded-[10px]' ref={(e) => servicesRef.current.push(e)}>
                 <div className='flex items-center justify-between'>
@@ -163,7 +151,7 @@ const Page = () => {
                   <img src="/assets/icons/plus.png" alt="" className='cursor-pointer dark:invert w-[25px] h-[25px]' onClick={() => serviceClick(5)} />
                   <img src="/assets/icons/minus.png" alt="" className='cursor-pointer dark:invert w-[25px] h-[25px] transition' style={{ display: "none" }} onClick={() => serviceClick(5)} />
                 </div>
-                <p className='text-light-secondaryText dark:text-dark-secondaryText' style={{display: "none"}}>Proficient in Blender 3D modeling, creating detailed and visually compelling models for various applications. With a strong grasp of texturing, lighting, and animation, I develop realistic and stylized 3D assets tailored for use in games, animations, and visual presentations.</p>
+                <p className='text-light-secondaryText dark:text-dark-secondaryText' style={{ display: "none" }}>Proficient in Blender 3D modeling, creating detailed and visually compelling models for various applications. With a strong grasp of texturing, lighting, and animation, I develop realistic and stylized 3D assets tailored for use in games, animations, and visual presentations.</p>
               </li>
             </ul>
           </div>
@@ -177,21 +165,21 @@ const Page = () => {
       <div className="w-full flex justify-center text-light-primaryText dark:text-dark-primaryText pt-[150px] tablet:pt-[100px]" id='works'>
         <div className='w-[750px] tablet:w-full px-[20px]'>
           <h4 className='font-inter-regular text-3xl w-full text-center mb-[50px]'>My works</h4>
-          <div className='w-full bg-light-cardBackground dark:bg-dark-cardBackground p-[15px] rounded-[10px] mb-[10px]'>
+          <Link href="/Projects/Artex" className='rounded-[10px] bg-light-cardBackground dark:bg-dark-cardBackground p-[10px] w-full block'>
             <img src="/assets/images/artex.png" alt="" className='w-full object-cover rounded-[10px] hover:brightness-75' />
             <div className='mt-[20px]'>
               <h6 className='font-inter-regular text-xl'>A.R.T.E.X</h6>
               <p className='text-base font-inter-italic text-light-secondaryText dark:text-dark-secondaryText'>AI companion for windows (comming soon)</p>
             </div>
-          </div>
-          <div className='grid grid-cols-2 gap-[10px] w-full'>
-            <div className='rounded-[10px] bg-light-cardBackground dark:bg-dark-cardBackground p-[10px] w-full h-full'>
-              <img src="/assets/images/upcoming.jpg" alt="" className='w-full object-cover rounded-[10px] hover:brightness-75' />
+          </Link>
+          <div className='grid grid-cols-2 gap-[10px] w-full mt-[10px]'>
+            <Link href="/Projects/CodeReducer" className='rounded-[10px] bg-light-cardBackground dark:bg-dark-cardBackground p-[10px] w-full h-full block'>
+              <img src="/assets/images/upcoming.jpg" alt="" className='w-full block object-cover rounded-[10px] hover:brightness-75' />
               <div className='mt-[20px]'>
                 <h6 className='font-inter-regular text-xl'>Upcoming</h6>
                 <p className='text-base font-inter-italic text-light-secondaryText dark:text-dark-secondaryText'>Unknown</p>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

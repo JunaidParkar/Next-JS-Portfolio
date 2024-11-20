@@ -89,3 +89,8 @@ body::-webkit-scrollbar-thumb {
 .img_scroller::-webkit-scrollbar {
     display: none;
 }
+
+a {
+    margin: 0;
+    padding: 0;
+}
