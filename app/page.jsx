@@ -72,7 +72,7 @@ const Page = () => {
           <p className='text-light-primaryText dark:text-dark-primaryText font-inter-regular text-[20px]'>Hey, I&apos;m Junaid, a developer from Mumbai working with ambitious brands and agencies.</p>
           <div className='flex gap-[20px]'>
             <Link className='px-[20px] py-[10px] bg-dark-background dark:bg-light-background text-dark-primaryText dark:text-light-primaryText rounded-[10px]' href="/Junaid_Resume.docx" download="Junaid_Resuce.docx" ref={setMagnetRef}>Download my CV</Link>
-            <button className='px-[20px] py-[10px] bg-light-background dark:bg-dark-background text-light-primaryText dark:text-dark-primaryText rounded-[10px] border-[1px] border-solid border-dark-background dark:border-light-background'>See my works</button>
+            <Link className='px-[20px] py-[10px] bg-light-background dark:bg-dark-background text-light-primaryText dark:text-dark-primaryText rounded-[10px] border-[1px] border-solid border-dark-background dark:border-light-background' href="#works">See my works</Link>
           </div>
         </div>
       </div>
@@ -174,10 +174,10 @@ const Page = () => {
           </Link>
           <div className='grid grid-cols-2 gap-[10px] w-full mt-[10px]'>
             <Link href="/Projects/CodeReducer" className='rounded-[10px] bg-light-cardBackground dark:bg-dark-cardBackground p-[10px] w-full h-full block'>
-              <img src="/assets/images/upcoming.jpg" alt="" className='w-full block object-cover rounded-[10px] hover:brightness-75' />
+              <img src="/assets/images/npmjs.png" alt="" className='w-full block object-cover rounded-[10px] hover:brightness-75' />
               <div className='mt-[20px]'>
-                <h6 className='font-inter-regular text-xl'>Upcoming</h6>
-                <p className='text-base font-inter-italic text-light-secondaryText dark:text-dark-secondaryText'>Unknown</p>
+                <h6 className='font-inter-regular text-xl'>Codereducer</h6>
+                <p className='text-base font-inter-italic text-light-secondaryText dark:text-dark-secondaryText'>npm package for frontend UI design.</p>
               </div>
             </Link>
           </div>
