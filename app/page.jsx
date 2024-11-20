@@ -62,7 +62,7 @@ const Page = () => {
 
       <div className='z-[1] top-0 left-0 w-full flex items-start justify-center'>
         <div className='w-[650px] tablet:w-full h-[550px] px-[15px] tablet:px-[20px] flex flex-col justify-end gap-[20px]'>
-          <div className='w-[100px] h-[100px] rounded-[10px] overflow-hidden mt-[25px] bg-red-500'>
+          <div className='w-[100px] h-[100px] rounded-[10px] overflow-hidden mt-[25px]'>
             <img src="/assets/images/mine.jpg" alt="" className='w-full object-cover aspect-square' />
           </div>
           <div className='flex flex-col gap-[5px]'>
@@ -72,7 +72,8 @@ const Page = () => {
           <p className='text-light-primaryText dark:text-dark-primaryText font-inter-regular text-[20px]'>Hey, I&apos;m Junaid, a developer from Mumbai working with ambitious brands and agencies.</p>
           <div className='flex gap-[20px]'>
             <Link className='px-[20px] py-[10px] bg-dark-background dark:bg-light-background text-dark-primaryText dark:text-light-primaryText rounded-[10px]' href="/Junaid_Resume.docx" download="Junaid_Resuce.docx" ref={setMagnetRef}>Download my CV</Link>
-            <Link className='px-[20px] py-[10px] bg-light-background dark:bg-dark-background text-light-primaryText dark:text-dark-primaryText rounded-[10px] border-[1px] border-solid border-dark-background dark:border-light-background' href="#works">See my works</Link>
+            <Link className='px-[20px] py-[10px] bg-light-background dark:bg-dark-background text-light-primaryText dark:text-dark-primaryText rounded-[10px] border-[1px] border-solid border-dark-background dark:border-light-background' href="#works
+            ">See my works</Link>
           </div>
         </div>
       </div>

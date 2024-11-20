@@ -3,7 +3,7 @@ import OtherNavbar from '@/components/otherNavbar'
 import customCursor from 'codereducer/cursor'
 import React, { useEffect, useRef } from 'react'
 
-const page = () => {
+const Page = () => {
 
     const cursorRef = useRef(null)
 
@@ -22,12 +22,12 @@ const page = () => {
             <div ref={cursorRef}></div>
             <OtherNavbar pageName="Code Reducer" />
 
-            <div className="flex justify-center items-center flex-col">
+            <div className="flex justify-center items-center flex-col tablet:px-[20px]">
                 <div className='w-[650px] tablet:w-full flex flex-col justify-end gap-[20px] pt-[150px]'>
-                    <img src="/assets/images/npmjs.png" alt="Code reducer" className='w-[250px] rounded-[10px]' />
+                    <img src="/assets/images/npmjs.png" alt="Code reducer" className='w-[250px] rounded-[10px] tablet:w-[150px]' />
                     <div className='w-full flex flex-col gap-[5px]'>
-                        <h3 className='text-[30px] leading-[30px] font-bold font-instrument-regular tracking-[5px] text-light-primaryText dark:text-dark-primaryText'>CodeReducer</h3>
-                        <p className='text-[17px] leading-[17px] font-light font-inter-regular tracking-[0] text-light-secondaryText dark:text-dark-secondaryText'>A versatile JavaScript library designed to simplify and enhance your web development projects.</p>
+                        <h3 className='text-[30px] tablet:text-[27px] leading-[30px] font-bold font-instrument-regular tracking-[5px] text-light-primaryText dark:text-dark-primaryText'>CodeReducer</h3>
+                        <p className='text-[17px] tablet:text-[15px] leading-[17px] font-light font-inter-regular tracking-[0] text-light-secondaryText dark:text-dark-secondaryText'>A versatile JavaScript library designed to simplify and enhance your web development projects.</p>
                     </div>
 
                     <div className='w-[650px] tablet:w-full flex flex-col justify-end gap-[20px] mt-[50px] text-light-primaryText dark:text-dark-primaryText text-[20px] text-justify leading-[23px]'>
@@ -98,4 +98,4 @@ const page = () => {
 }
 
 
-export default page
+export default Page

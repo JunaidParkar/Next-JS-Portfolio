@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import OtherNavbar from '@/components/otherNavbar'
 import customCursor from 'codereducer/cursor'
 
-const page = () => {
+const Page = () => {
 
   const cursorRef = useRef(null)
 
@@ -22,12 +22,12 @@ const page = () => {
     <>
       <div ref={cursorRef}></div>
       <OtherNavbar pageName="Artex" />
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col tablet:px-[20px]">
         <div className='w-[650px] tablet:w-full flex flex-col justify-end gap-[20px] pt-[150px]'>
-          <img src="/assets/images/artex.png" alt="A.R.T.E.X" className='w-[250px] rounded-[10px]' />
+          <img src="/assets/images/artex.png" alt="A.R.T.E.X" className='w-[250px] rounded-[10px] tablet:w-[150px]' />
           <div className='w-full flex flex-col gap-[5px]'>
-            <h3 className='text-[30px] leading-[30px] font-bold font-instrument-regular tracking-[5px] text-light-primaryText dark:text-dark-primaryText'>A.R.T.E.X</h3>
-            <p className='text-[17px] leading-[17px] font-light font-inter-regular tracking-[0] text-light-secondaryText dark:text-dark-secondaryText'>Advanced Responsive Text Entity for Xpertise.</p>
+            <h3 className='text-[30px] tablet:text-[27px] leading-[30px] font-bold font-instrument-regular tracking-[5px] text-light-primaryText dark:text-dark-primaryText'>A.R.T.E.X</h3>
+            <p className='text-[17px] tablet:text-[15px] leading-[17px] font-light font-inter-regular tracking-[0] text-light-secondaryText dark:text-dark-secondaryText'>Advanced Responsive Text Entity for Xpertise.</p>
           </div>
         </div>
 
@@ -36,7 +36,7 @@ const page = () => {
             <strong>A.R.T.E.X</strong> (Advanced Responsive Text Entity for Xpertise) is an innovative AI-driven virtual assistant designed exclusively for Windows. Combining state-of-the-art technologies like Python, JavaScript, HTML, CSS, and advanced AI models, it serves as a comprehensive solution for task automation, query resolution, and interactive companionship. Its core features are centered around improving user productivity and enhancing the digital experience.
             <br /><br />A.R.T.E.X is built with natural language processing (NLP) and machine learning capabilities. These features enable it to understand user input, process complex queries, and deliver intelligent responses. It leverages Google’s pre-trained AI models to supplement its core functions, making it a versatile tool for both casual and professional users.
             <br /><br />As a personal AI companion, A.R.T.E.X facilitates engaging conversations, acting as a friendly assistant for users who prefer conversational interaction with their tools. While it is still in its early stages of development, the system demonstrates promising potential. It learns and adapts over time, becoming smarter and more accurate as it processes more user data.
-            <br /><br />One of the unique aspects of A.R.T.E.X is its graphical user interface (GUI), which integrates access to all the developer's projects in one centralized hub. This integration allows users to easily navigate and use various tools, making A.R.T.E.X a one-stop platform for productivity. Whether it's managing files, accessing utilities, or executing automated workflows, the app is designed to streamline tasks and improve efficiency.
+            <br /><br />One of the unique aspects of A.R.T.E.X is its graphical user interface (GUI), which integrates access to all the developer&apos;s projects in one centralized hub. This integration allows users to easily navigate and use various tools, making A.R.T.E.X a one-stop platform for productivity. Whether it&apos;s managing files, accessing utilities, or executing automated workflows, the app is designed to streamline tasks and improve efficiency.
             <br /><br />Key highlights of A.R.T.E.X include:</p>
             <ul className='list-disc w-full'>
               <li className='ml-[20px]'>Seamless conversational AI capabilities for engaging interactions.</li>
@@ -60,4 +60,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

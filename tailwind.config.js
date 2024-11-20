@@ -11,7 +11,6 @@ module.exports = {
             fontFamily: {
                 "instrument-italic": ["instrument_italic"],
                 "instrument-regular": ["instrument_regular"],
-                "inter-bold": ["inter_bold"],
                 "inter-italic": ["inter_italic"],
                 "inter-medium": ["inter_medium"],
                 "inter-regular": ["inter_regular"]
